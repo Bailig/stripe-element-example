@@ -56,7 +56,7 @@ export const CheckoutForm = () => {
     return stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `${window.location.origin}/purchase-result`,
+        return_url: `${window.location.origin}`,
       },
     });
   });
